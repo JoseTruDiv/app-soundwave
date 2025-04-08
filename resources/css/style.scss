@@ -16,12 +16,12 @@
 
 /***************************************COLORES GENERALES***************************************************/
 
- $color-principal: #1784C7;
- $color-secundario: #5FC4E6;
- $color-text: #5A595B;
+ $color-principal: #CC00FF;
+ $color-secundario: #FFFFFF;
+ $color-text: #fff;
  $color-terciario: #5A595B;
  $color-fondo: #fff;
- $color-enfasis: #fff;
+ $color-enfasis: #000000;
  $color-enlace: $color-secundario;
  $color-enlaceHover: $color-principal;
 
@@ -31,8 +31,14 @@
 
 /***************************************FUENTES GENERALES***************************************************/
 
+@font-face {
+    font-family: 'Calibri';
+    src: url('../fonts/Calibri-font/calibri-regular.ttf');
+}
+
+
 $font-text: (
-  'family': "Arial",
+  'family': "Calibri",
   'size': 1rem,
   'weigth': 400,
   'style': normal,
@@ -40,7 +46,7 @@ $font-text: (
 );
 
 $font-H1: (
-  'family': "Arial",
+  'family': "Calibri",
   'size': 2.8rem,
   'weigth': 900,
   'style': normal,
@@ -48,7 +54,7 @@ $font-H1: (
 );
 
 $font-H1-tablet: (
-  'family': "Arial",
+  'family': "Calibri",
   'size': 2.5rem,
   'weigth': 900,
   'style': normal,
@@ -56,7 +62,7 @@ $font-H1-tablet: (
 );
 
 $font-H1-mobile: (
- 'family': "Arial", 
+ 'family': "Calibri", 
   'size': 2rem,
   'weigth': 900,
   'style': normal,
@@ -64,21 +70,21 @@ $font-H1-mobile: (
 
 
 $font-H2: (
-  'family': "Arial",
+  'family': "Calibri",
   'size': 2rem,
   'weigth': 900,
   'style': normal,
 );
 
 $font-H2-tablet: (
-  'family': "Arial", 
+  'family': "Calibri", 
   'size': 1.8rem,
   'weigth': 900,
   'style': normal,
 );
 
 $font-H2-mobile: (
-  'family': "Arial", 
+  'family': "Calibri", 
   'size': 1.5rem,
   'weigth': 900,
   'style': normal,
@@ -86,7 +92,7 @@ $font-H2-mobile: (
 
 
 $font-H3: (
-  'family': "Arial",
+  'family': "Calibri",
   'size': 1.6rem,
   'weigth': 700,
   'style': normal,
@@ -94,14 +100,14 @@ $font-H3: (
 );
 
 $font-H3-tablet: (
-  'family': "Arial",
+  'family': "Calibri",
   'size': 1.4rem,
   'weigth': 700,
   'style': normal,
 );
 
 $font-H3-mobile: (
-  'family': "Arial",
+  'family': "Calibri",
   'size': 1.2rem,
   'weigth': 700,
   'style': normal,
@@ -109,7 +115,7 @@ $font-H3-mobile: (
 
 
 $font-btn: (
-  'family': "Arial",
+  'family': "Calibri",
   'size': 1,
   'weigth': 400,
   'style': normal,
@@ -426,6 +432,108 @@ h3{
 
 
 
+/***************************************LOGIN***************************************************/
+
+.fond-img-login{
+    height: 100vh;
+    background-image: url('../img/fashionable-woman.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 30%;
+}
+
+.content-login{
+    height: 100vh;
+    background-color: rgba(50, 1, 75, 0.749);
+}
+
+.box-login-xxl{
+    background-color: #000000;
+    border-radius: 1rem;
+    width: 35rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.box-login-mobile{
+    display: none;
+    border-radius: 1rem;
+    width: 90%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.text-logo{
+    font-family: get-map($font-text, 'family');
+    font-size: 3rem;
+    font-weight: get-map($font-text, 'weight');
+    font-style: get-map($font-text, 'style');
+    color: #fff;
+}
+
+.btn-login{
+    background-color: $color-principal;
+    color: $color-text;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    text-align: center;
+    border-radius: 1rem;
+    font-family: get-map($font-text, 'family');
+    font-size: 1.3rem;
+    width: 100%;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.btn-login:hover{
+    transform: scale(0.9);
+}
+
+.btn-google{
+    background-color: $color-text;
+    color: $color-enfasis;
+    text-decoration: none;
+    padding: 0.2rem 2rem;
+    border-radius: 1rem;
+    font-family: get-map($font-text, 'family');
+    font-size: 1.3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s;
+}
+
+.btn-google:hover{
+    transform: scale(0.9);
+}
+
+.a-link{
+    color: $color-text;
+    font-weight: bold;
+    font-family: get-map($font-text, 'family');
+}
+
+.a-link:hover{
+    color: $color-principal;
+}
+
+.input-login{
+    background-color: #7C7C7C;
+    color: #fff;
+    font-family: get-map($font-text, 'family');
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.input-login::placeholder{
+    color: #fff;
+}
+
+/***************************************REGISTRO***************************************************/
+
+
 
 /***************************************INICIO***************************************************/
 
@@ -475,18 +583,39 @@ h3{
 
 
 
+/**********************************PORTATILES PEQUEÑOS*****************************/
+
+
 @media screen and (max-width: $xxl) {
     
 }
 
 
+/***************************************TABLETS***************************************************/
+
 @media screen and (max-width: $lg) {
+
+    .box-login-xxl{
+        display: none !important;
+    }
+
+    .box-login-mobile{
+        display: flex;
+        border-radius: 1rem;
+        transform: scale(1.3);
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
+    
+    .fond-img-login{
+        height: 100vh;
+        background-image: url('../img/fashionable-woman.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% 10%;
+    }
     
 }
 
-
-
-/***************************************TABLETS***************************************************/
 
 @media screen and (max-width: $md) {
 
@@ -651,10 +780,15 @@ h3{
         display: block;
     }
     
+
+    
+
 }
 
 
 @media screen and (max-width: $sm) {
+
+    
     
 }
 
@@ -664,16 +798,24 @@ h3{
 
 @media screen and (max-width: $xs) {
 
-    .header{
-        background-color: $color-principal;
-        padding: 3rem 1.5rem;
+    .fond-img-login{
+        height: 100vh;
+        background-image: url('../img/fashionable-woman.jpg');
+        background-size: cover;
+        width: 100% !important;
+        background-repeat: no-repeat;
+        background-position: 70% 10%;
+    }
+
+    .box-login-mobile{
+        display: flex;
+        width: 100%;
+        border-radius: 1rem;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+        transform: scale(1) !important;
     }
     
     
-    .footer{
-        background-color: $color-principal;
-        padding: 3rem 1.5rem;
-    }
     
     .main{
         background-image: url('../imgs/2542.png');

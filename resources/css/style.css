@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /***********************************************************************************************************/
 /***************************************AJUSTES GENERALES***************************************************/
 /***********************************************************************************************************/
@@ -9,6 +10,10 @@
 
 /***************************************COLORES GENERALES***************************************************/
 /***************************************FUENTES GENERALES***************************************************/
+@font-face {
+  font-family: "Calibri";
+  src: url("../fonts/Calibri-font/calibri-regular.ttf");
+}
 /***************************************FUNCIONES DE FUENTES***************************************************/
 /***************************************MEDIDAS GENERALES***************************************************/
 /***************************************ICONOS GENERALES***************************************************/
@@ -842,31 +847,31 @@ li {
 
 /***************************************FUENTES GENERALES***************************************************/
 h1 {
-  font-family: "Arial";
+  font-family: "Calibri";
   font-size: 2.8rem;
   font-style: normal;
-  color: #5A595B;
+  color: #fff;
 }
 
 h2 {
-  font-family: "Arial";
+  font-family: "Calibri";
   font-size: 2rem;
   font-style: normal;
-  color: #5A595B;
+  color: #fff;
 }
 
 h3 {
-  font-family: "Arial";
+  font-family: "Calibri";
   font-size: 1.6rem;
   font-style: normal;
-  color: #5A595B;
+  color: #fff;
 }
 
 .text {
-  font-family: "Arial";
+  font-family: "Calibri";
   font-size: 1rem;
   font-style: normal;
-  color: #5A595B;
+  color: #fff;
 }
 
 .font-bold {
@@ -874,15 +879,15 @@ h3 {
 }
 
 .a {
-  font-family: "Arial";
+  font-family: "Calibri";
   font-size: 1rem;
   font-style: normal;
-  color: #5FC4E6;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
 .a:hover {
-  color: #1784C7;
+  color: #CC00FF;
 }
 
 /***************************************HOME***************************************************/
@@ -938,13 +943,111 @@ h3 {
     transform: translateX(0px);
   }
 }
+/***************************************LOGIN***************************************************/
+.fond-img-login {
+  height: 100vh;
+  background-image: url("../img/fashionable-woman.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0% 30%;
+}
+
+.content-login {
+  height: 100vh;
+  background-color: rgba(50, 1, 75, 0.749);
+}
+
+.box-login-xxl {
+  background-color: #000000;
+  border-radius: 1rem;
+  width: 35rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.box-login-mobile {
+  display: none;
+  border-radius: 1rem;
+  width: 90%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.text-logo {
+  font-family: "Calibri";
+  font-size: 3rem;
+  font-style: normal;
+  color: #fff;
+}
+
+.btn-login {
+  background-color: #CC00FF;
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  font-family: "Calibri";
+  font-size: 1.3rem;
+  width: 100%;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  transform: scale(0.9);
+}
+
+.btn-google {
+  background-color: #fff;
+  color: #000000;
+  text-decoration: none;
+  padding: 0.2rem 2rem;
+  border-radius: 1rem;
+  font-family: "Calibri";
+  font-size: 1.3rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+}
+
+.btn-google:hover {
+  transform: scale(0.9);
+}
+
+.a-link {
+  color: #fff;
+  font-weight: bold;
+  font-family: "Calibri";
+}
+
+.a-link:hover {
+  color: #CC00FF;
+}
+
+.input-login {
+  background-color: #7C7C7C;
+  color: #fff;
+  font-family: "Calibri";
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.input-login::placeholder {
+  color: #fff;
+}
+
+/***************************************REGISTRO***************************************************/
 /***************************************INICIO***************************************************/
 /***************************************PROYECTOS***************************************************/
 /***************************************TAREAS***************************************************/
 /***************************************CONTACTOS***************************************************/
 /***************************************FOOTER***************************************************/
 .a-footer {
-  font-family: "Arial";
+  font-family: "Calibri";
   font-size: 1rem;
   font-style: normal;
   text-decoration: none;
@@ -952,13 +1055,32 @@ h3 {
 }
 
 .a-footer:hover {
-  color: #5FC4E6;
+  color: #FFFFFF;
 }
 
 /***********************************************************************************************************/
 /***************************************RESPONSIVES***************************************************/
 /***********************************************************************************************************/
+/**********************************PORTATILES PEQUEÑOS*****************************/
 /***************************************TABLETS***************************************************/
+@media screen and (max-width: 992px) {
+  .box-login-xxl {
+    display: none !important;
+  }
+  .box-login-mobile {
+    display: flex;
+    border-radius: 1rem;
+    transform: scale(1.3);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+  .fond-img-login {
+    height: 100vh;
+    background-image: url("../img/fashionable-woman.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 10%;
+  }
+}
 @media screen and (max-width: 768px) {
   .m-tablet-1 {
     margin: 1rem !important;
@@ -1451,11 +1573,11 @@ h3 {
     gap: 10rem !important;
   }
   .header {
-    background-color: #1784C7;
+    background-color: #CC00FF;
     padding: 3rem;
   }
   .footer {
-    background-color: #1784C7;
+    background-color: #CC00FF;
     padding: 3rem;
   }
   .main {
@@ -1472,17 +1594,17 @@ h3 {
     display: flex !important;
   }
   h1 {
-    font-family: "Arial";
+    font-family: "Calibri";
     font-size: 2.5rem;
     font-style: normal;
   }
   h2 {
-    font-family: "Arial";
+    font-family: "Calibri";
     font-size: 1.8rem;
     font-style: normal;
   }
   h3 {
-    font-family: "Arial";
+    font-family: "Calibri";
     font-size: 1.4rem;
     font-style: normal;
   }
@@ -1510,7 +1632,7 @@ h3 {
   .nav-img {
     width: 12rem;
     height: 12rem;
-    background-color: #5FC4E6;
+    background-color: #FFFFFF;
     border-radius: 100%;
     background-image: url("../imgs/1712518671384.png");
     background-size: cover;
@@ -1532,13 +1654,20 @@ h3 {
 }
 /***************************************MOBILES***************************************************/
 @media screen and (max-width: 420px) {
-  .header {
-    background-color: #1784C7;
-    padding: 3rem 1.5rem;
+  .fond-img-login {
+    height: 100vh;
+    background-image: url("../img/fashionable-woman.jpg");
+    background-size: cover;
+    width: 100% !important;
+    background-repeat: no-repeat;
+    background-position: 70% 10%;
   }
-  .footer {
-    background-color: #1784C7;
-    padding: 3rem 1.5rem;
+  .box-login-mobile {
+    display: flex;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transform: scale(1) !important;
   }
   .main {
     background-image: url("../imgs/2542.png");
@@ -1554,17 +1683,17 @@ h3 {
     display: flex !important;
   }
   h1 {
-    font-family: "Arial";
+    font-family: "Calibri";
     font-size: 2rem;
     font-style: normal;
   }
   h2 {
-    font-family: "Arial";
+    font-family: "Calibri";
     font-size: 1.5rem;
     font-style: normal;
   }
   h3 {
-    font-family: "Arial";
+    font-family: "Calibri";
     font-size: 1.2rem;
     font-style: normal;
   }

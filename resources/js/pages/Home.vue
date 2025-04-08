@@ -1,7 +1,8 @@
 <script setup lang="ts">
-    import '../../css/style.css';
+  import Login from './auth/Login.vue';
+  import '../../css/style.css';
 </script>
 
 <template>
-  <h1>Hola tio</h1>
+  <Login/>
 </template>
