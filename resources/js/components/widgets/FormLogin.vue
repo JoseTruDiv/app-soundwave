@@ -36,7 +36,7 @@
                 <ButtonGoogle/>
             </div>
             <div class="text-center">
-                <p class="text">¿No tienes cuenta?, <a class="a-link" href="#">REGISTRATÉ</a></p>
+                <p class="text">¿No tienes cuenta?, <a class="a-link" href="/registro">REGISTRATÉ</a></p>
             </div>
         </div>
     </div>
