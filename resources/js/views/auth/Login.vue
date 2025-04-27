@@ -1,7 +1,7 @@
 <script setup lang="ts">
-  import FormLogin from '@/components/widgets/FormLogin.vue';
+  import FormLogin from '../components/widgets/FormLogin.vue';
   import '../../../css/style.css';
-  import FormLoginMobile from '@/components/widgets/FormLoginMobile.vue';
+  import FormLoginMobile from '../components/widgets/FormLoginMobile.vue';
 </script>
 
 <template>

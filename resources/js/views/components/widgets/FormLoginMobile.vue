@@ -1,7 +1,7 @@
 <script setup lang="ts">
-    import '../../../css/style.css';
-    import Logo_SoundWave from '@/components/widgets/Logos/Logo_SoundWave.vue';
-    import ButtonGoogle from '@/components/widgets/Social/ButtonGoogle.vue';
+    import '@/../css/style.css';
+    import Logo_SoundWave from './Logos/Logo_SoundWave.vue';
+    import ButtonGoogle from './Social/ButtonGoogle.vue';
     import { ref } from 'vue';
 
     const inputActive = ref(0);
@@ -17,9 +17,15 @@
 </script>
 
 <template>
-    <div class="box-login-xxl px-2 py-3 row-column align-center justify-center g-1">
-        <div class="w-80 g-1">
-                <Logo_SoundWave/>
+    <div class="box-login-mobile px-2 py-3 row-column align-center justify-center g-1">
+        <div class="g-1">
+            <Logo_SoundWave/>
+            <div class="d-flex justify-center pb-1 pt-2">
+                <ButtonGoogle/>
+            </div>
+            <div>
+                <p class="text text-center">OR</p>
+            </div>
             <div id="divForm" class="box-input py-1 w-100" v-show="inputActive!==0">
                 <form class="row-column g-1" action="" method="post">
                     <input class="input-login" type="text" name="nameUser" id="nameUser" placeholder="Email o username...">
@@ -32,11 +38,9 @@
             <div class="d-flex justify-center">
                 <a @click="activeInput" id="openFormLogin" class="btn-login" :class="{'openFormOFF':openFormOFF,'openFormON':openFormON}">Login here</a>
             </div>
-            <div class="d-flex justify-center pb-1">
-                <ButtonGoogle/>
-            </div>
+           
             <div class="text-center">
-                <p class="text">¿No tienes cuenta?, <a class="a-link" href="/registro">REGISTRATÉ</a></p>
+                <p class="text">¿No tienes cuenta?, <a class="a-link" href="#">REGISTRATÉ</a></p>
             </div>
         </div>
     </div>
