@@ -952,15 +952,28 @@ h3 {
   background-position: 0% 30%;
 }
 
+.fond-img-reg {
+  height: 100vh;
+  background-image: url("../img/woman-wearing-headphone-while-singing-against-white-background 2.jpg");
+  background-size: 135%;
+  background-repeat: no-repeat;
+  background-position: 100% 40%;
+}
+
 .content-login {
   height: 100vh;
   background-color: rgba(50, 1, 75, 0.749);
 }
 
+.content-reg {
+  height: 100vh;
+  background-color: rgba(1, 29, 75, 0.749);
+}
+
 .box-login-xxl {
   background-color: #000000;
   border-radius: 1rem;
-  width: 35rem;
+  width: 31rem;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
@@ -973,7 +986,7 @@ h3 {
 
 .text-logo {
   font-family: "Calibri";
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-style: normal;
   color: #fff;
 }
@@ -1070,7 +1083,7 @@ h3 {
   .box-login-mobile {
     display: flex;
     border-radius: 1rem;
-    transform: scale(1.3);
+    transform: scale(1);
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   }
   .fond-img-login {
