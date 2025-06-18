@@ -73,6 +73,3 @@ Las rutas y vistas se gestionan desde Laravel, pero la interfaz y la navegación
 - [Documentación de Vite](https://vitejs.dev/)
 
 ---
-
-**Autor:** [Tu Nombre o Equipo]  
-**Licencia:** [MIT u otra licencia]
